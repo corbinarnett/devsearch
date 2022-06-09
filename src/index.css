@@ -3,6 +3,41 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  @apply bg-primary text-primary;
+}
+
+.rounded-div {
+  @apply rounded-2xl shadow-xl bg-primary px-2 max-w-[1140px] w-full mx-auto;
+}
+
+.dark {
+  --color-bg-primary: #141d2f;
+  --color-bg-secondary: #1e2a47;
+  --color-text-primary: #ffffff;
+  --color-text-accent: #0079ff;
+  --color-text-alert: #f74646;
+  --color-bg-button: #0079ff;
+  --color-bg-button-hover: #60abff;
+  /* Dark Mode Button */
+  --color-link-active: #ffffff;
+  --color-link-hover: #90a4d4;
+}
+
+.light {
+  --color-bg-primary: #f6f8ff;
+  --color-bg-secondary: #fefefe;
+  --color-text-primary: #2b3442;
+  --color-text-secondary: #4b6a9b;
+  --color-text-accent: #0079ff;
+  --color-text-alert: #f74646;
+  --color-bg-button: #0079ff;
+  --color-bg-button-hover: #60abff;
+  /* Dark Mode Button */
+  --color-link-active: #697c9a;
+  --color-link-hover: #2b3442;
+}
+
 @layer base {
   h1 {
     @apply font-custom font-bold text-[26px] leading-[38px];
